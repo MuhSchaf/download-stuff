@@ -40,7 +40,7 @@ export class AppComponent {
   methodeEins(res: any): void {
     console.log("res1");
     console.log(res);
-    var a = document.createElement("a");
+    const a: HTMLAnchorElement = document.createElement("a");
     a.href = URL.createObjectURL(res);
     a.download = "res";
     // start download
