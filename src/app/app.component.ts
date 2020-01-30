@@ -28,9 +28,9 @@ export class AppComponent {
     // window.open(this.picture);
 
     this.http.get(this.picture, { responseType: "blob" }).subscribe(res => {
-      // this.methodeEins(res);
+      this.methodeEins(res);
       // this.methodeZwei(res);
-      this.methodeDrei(res);
+      // this.methodeDrei(res);
       // this.methodeVier(res);
       // this.methodeFuenf(res);
       // this.methodeSechs(res);
